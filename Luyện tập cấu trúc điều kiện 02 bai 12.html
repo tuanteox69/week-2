@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập cấu trúc điều kiện 02</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt("Nhập số tiền gốc : (triệu đồng)"));
+    let b = parseFloat(prompt("Nhập lãi suất hàng tháng:(%)"));
+    let c = parseFloat(prompt("Nhập số tháng vay : (tháng) "));
+    let sum = a*(1+b)*Math.sqrt(c);
+    if (a>0&&c>0&&b>0) {
+        if (a <10 ) {
+            document.write("Tổng số tiền phải trả là: " + a * (1 + b) * Math.sqrt(c));
+        }
+        else {
+            if (a<30){
+                document.write("Tổng số tiền phải trả là: " + a * (1 + b+0.01) * Math.sqrt(c));
+            }
+           else {
+                if (a < 50) {
+                    document.write("Tổng số tiền phải trả là: " + a * (1 + b + 0.02) * Math.sqrt(c));
+                }
+                else {
+                    if (a > 50) {
+                        document.write("Tổng số tiền phải trả là: " + a * (1 + b + 0.03) * Math.sqrt(c));
+                    }
+
+                }
+            }
+        }
+    }
+    else {
+        document.write("mời bạn nhập lại")
+    }
+</script>
+</body>
+</html>

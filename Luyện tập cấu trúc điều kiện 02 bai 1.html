@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form>
+    <p>
+        <label>Nhập Độ C :</label>
+        <input id="doC" type="number" placeholder="°C"
+               oninput="temperatureConverter(this.value)"
+               onchange="temperatureConverter(this.value)">
+    </p>
+    <p>Độ F: <span id="doF"></span></p>
+</form>
+
+<script>
+
+    function temperatureConverter(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("doF").innerHTML = valNum*9/5+32;
+    }
+
+</script>
+</body>
+</html>

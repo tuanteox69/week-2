@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập cấu trúc điều kiện 02</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt("Nhập số KW điện tiêu thụ : "));
+   if (a>0){
+     if (a<51){
+         document.write("số tiền phải trả là :"+ a*1.678 +" VND");
+     }
+      else {if (a<101){
+           document.write("số tiền phải trả là :"+ a*1.734+ " VND");
+       }
+      else {
+         if (a < 201) {
+             document.write("số tiền phải trả là :" + a * 2.014 + "VND");
+         } else {
+             if (a < 301) {
+                 document.write("số tiền phải trả là :" + a * 2.536 + "VND");
+             } else {
+                 if (a > 301) {
+                     document.write("số tiền phải trả là :" + a * 2.834 + "VND");
+                 }
+             }
+         }
+     }
+       }
+   }
+else {
+    document.write("Mời bạn nhập lại")
+   }
+</script>
+</body>
+</html>

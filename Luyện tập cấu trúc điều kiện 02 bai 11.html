@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập cấu trúc điều kiện 02</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt("Nhập số tiền thu nhập cá nhân : (triệu đồng)"));
+    if (a>0){
+        if (a<5){
+            document.write("số tiền thuế phải nộp là :"+ a*5/100 +" triệu đồng");
+        }
+        else {if (a<15){
+            document.write("số tiền thuế phải nộp là :"+ a*10/100+ " triệu đồng");
+        }
+        else {
+            if (a < 30) {
+                document.write("số tiền thuế phải nộp là :" + a * 15/100 + " triệu đồng");
+            } else {
+                if (a < 50) {
+                    document.write("số thuế phải nộp là :" + a * 20/100 + " triệu đồng");
+                } else {
+                    if (a > 50) {
+                        document.write("số thuế phải nộp là :" + a * 25/100 + " triệu đồng");
+                    }
+                }
+            }
+        }
+        }
+    }
+    else {
+        document.write("Mời bạn nhập lại")
+    }
+</script>
+</body>
+</html>

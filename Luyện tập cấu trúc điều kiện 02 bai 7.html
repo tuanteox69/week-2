@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 2</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập tham số a :(a≠0)"));
+    let b = parseInt(prompt("Nhập tham số b :"));
+    let c = parseInt(prompt("Nhập tham số c :"));
+    let  Δ = b*b-4*a*c;
+    if (a!=0) {
+        if (Δ > 0) {
+            alert(" phương trình có 2 nghiệm phân biệt x1 =" +((-b + Math.sqrt(Δ)) / (2 * a)) + "; x2 =" +((-b -Math.sqrt(Δ)) / (2 * a)));
+        }else {
+            if (Δ ==0) {
+                alert("PHương trình có nghiệm kép x1=x2=" + -b / 2 * a);
+            }else {
+                alert("Phương trình vô nghiệm");
+            }
+        }
+
+    }
+    else
+    {
+        alert("Nhập lại với a khác 0")
+    }
+</script>
+</body>
+</html>
